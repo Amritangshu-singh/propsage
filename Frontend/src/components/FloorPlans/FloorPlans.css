@@ -1,0 +1,375 @@
+/* ===========================================
+   FLOOR PLANS SECTION
+=========================================== */
+
+.floorplans {
+  padding: 140px 0;
+  background: #f8f5ef;
+}
+
+.floorplans-container {
+  width: min(90%, 1450px);
+  margin: auto;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+.section-heading span {
+  color: #b88a4a;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.section-heading h2 {
+  margin: 18px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 58px;
+  color: #171717;
+}
+
+.section-heading p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #666;
+}
+
+/* ===========================================
+   TABS
+=========================================== */
+
+.floorplan-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.floorplan-tabs button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+  background: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: .35s;
+  color: #444;
+  font-weight: 500;
+  box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+.floorplan-tabs button:hover {
+  transform: translateY(-3px);
+}
+
+.floorplan-tabs button.active {
+  background: #b88a4a;
+  color: white;
+}
+
+/* ===========================================
+   VIEWER
+=========================================== */
+
+.viewer {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 50px;
+  align-items: center;
+}
+
+/* ===========================================
+   IMAGE
+=========================================== */
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 25px 60px rgba(0,0,0,.08);
+}
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+  filter: blur(8px);
+  transform: scale(1.04);
+  transition: .5s;
+  user-select: none;
+  pointer-events: none;
+}
+
+.image-wrapper:hover img {
+  filter: blur(6px);
+  transform: scale(1.05);
+}
+
+/* ===========================================
+   LOGIN OVERLAY
+=========================================== */
+
+.blur-overlay{
+
+    position:absolute;
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(2px);
+
+}
+
+.lock-icon {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.blur-overlay h3 {
+  font-size: 34px;
+  font-family: "Playfair Display", serif;
+}
+
+.blur-overlay p {
+  margin: 20px 0;
+  max-width: 420px;
+  line-height: 1.8;
+  color: rgba(255,255,255,.85);
+}
+
+.blur-overlay button {
+  padding: 15px 34px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background: #b88a4a;
+  color: white;
+  font-weight: 600;
+  transition: .35s;
+}
+
+.blur-overlay button:hover {
+  transform: translateY(-4px);
+}
+
+/* ===========================================
+   INFO PANEL
+=========================================== */
+
+.plan-info {
+  background: white;
+  padding: 45px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.06);
+}
+
+.plan-info h3 {
+  font-size: 38px;
+  font-family: "Playfair Display", serif;
+}
+
+.plan-info span {
+  display: inline-block;
+  margin-top: 8px;
+  color: #b88a4a;
+  font-weight: 600;
+}
+
+.plan-info h2 {
+  margin: 30px 0;
+  font-size: 48px;
+  color: #171717;
+}
+
+/* ===========================================
+   FEATURES
+=========================================== */
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.features div {
+  font-size: 17px;
+  color: #444;
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+.floor-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.gold-btn {
+  background: #b88a4a;
+  color: white;
+  border: none;
+  padding: 16px 34px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: .35s;
+}
+
+.gold-btn:hover {
+  transform: translateY(-3px);
+}
+
+.outline-btn {
+  background: transparent;
+  border: 2px solid #b88a4a;
+  color: #b88a4a;
+  padding: 16px 34px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: .35s;
+}
+
+.outline-btn:hover {
+  background: #b88a4a;
+  color: white;
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:1100px){
+
+.viewer{
+
+grid-template-columns:1fr;
+
+}
+
+.plan-info{
+
+order:2;
+
+}
+
+.image-wrapper{
+
+order:1;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.floorplans{
+
+padding:90px 0;
+
+}
+
+.section-heading h2{
+
+font-size:40px;
+
+}
+
+.floorplan-tabs{
+
+justify-content:flex-start;
+
+overflow-x:auto;
+
+padding-bottom:12px;
+
+}
+
+.floorplan-tabs::-webkit-scrollbar{
+
+display:none;
+
+}
+
+.floorplan-tabs button{
+
+flex-shrink:0;
+
+}
+
+.plan-info{
+
+padding:28px;
+
+}
+
+.plan-info h3{
+
+font-size:30px;
+
+}
+
+.plan-info h2{
+
+font-size:36px;
+
+}
+
+.floor-buttons{
+
+flex-direction:column;
+
+}
+
+.gold-btn,
+
+.outline-btn{
+
+width:100%;
+
+}
+
+}
+
+.view-plan-btn{
+
+    background:#B88A4A;
+    color:white;
+
+    border:none;
+
+    padding:18px 42px;
+
+    border-radius:50px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 15px 40px rgba(184,138,74,.35);
+
+}
+
+.view-plan-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#a87d42;
+
+}

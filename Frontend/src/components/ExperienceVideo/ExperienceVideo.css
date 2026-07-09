@@ -1,0 +1,197 @@
+.experience-video{
+
+padding:140px 0;
+
+background:#101010;
+
+}
+
+.video-heading{
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto;
+
+margin-bottom:60px;
+
+}
+
+.video-heading span{
+
+color:#B88A4A;
+
+letter-spacing:4px;
+
+font-size:13px;
+
+font-weight:600;
+
+}
+
+.video-heading h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:60px;
+
+color:white;
+
+margin:20px 0;
+
+}
+
+.video-heading p{
+
+color:#bbb;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+.video-poster{
+
+width:min(90%,1400px);
+
+margin:auto;
+
+border-radius:28px;
+
+overflow:hidden;
+
+position:relative;
+
+cursor:pointer;
+
+box-shadow:0 30px 90px rgba(0,0,0,.4);
+
+}
+
+.video-poster img{
+
+width:100%;
+
+display:block;
+
+transition:.8s;
+
+}
+
+.video-poster:hover img{
+
+transform:scale(1.05);
+
+}
+
+.poster-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.35);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.play-btn{
+
+width:95px;
+
+height:95px;
+
+border-radius:50%;
+
+background:#B88A4A;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:34px;
+
+color:white;
+
+margin-bottom:25px;
+
+transition:.35s;
+
+}
+
+.video-poster:hover .play-btn{
+
+transform:scale(1.1);
+
+}
+
+.poster-overlay h3{
+
+color:white;
+
+font-family:"Playfair Display",serif;
+
+font-size:34px;
+
+}
+
+.video-modal{
+
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.92);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+    padding:30px;
+}
+
+.video-modal video{
+
+    width:100%;
+    height:100%;
+
+    max-width:1600px;
+    max-height:90vh;
+
+    object-fit:contain;
+
+    border-radius:18px;
+
+    background:#000;
+}
+
+.close-video{
+
+position:absolute;
+
+top:35px;
+
+right:40px;
+
+background:none;
+
+border:none;
+
+font-size:40px;
+
+color:white;
+
+cursor:pointer;
+
+}

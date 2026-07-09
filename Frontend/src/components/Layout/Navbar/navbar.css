@@ -1,0 +1,277 @@
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    transition:.4s ease;
+
+}
+
+.navbar-container{
+
+    width:min(75%,1200px);
+
+    margin:25px auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:.4s ease;
+
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.logo{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.logo h2{
+
+    font-size:58px;
+
+    font-family:"Playfair Display", serif;
+
+    letter-spacing:8px;
+
+    color:white;
+
+    transition:.35s;
+
+    margin-bottom:5px;
+
+    line-height:1;
+
+}
+
+.logo span{
+
+    display:block;
+
+    margin: 3px;
+
+    font-size:12px;
+
+    letter-spacing:6px;
+
+    color:white;
+
+    transition:.35s;
+
+}
+
+/* ========================= */
+/* NAV LINKS */
+/* ========================= */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:38px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover{
+
+    color:#C89B5B;
+
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.visit-btn{
+
+    background:#C89B5B;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 36px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.visit-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 30px rgba(200,155,91,.4);
+
+}
+
+/* ========================= */
+/* MENU ICON */
+/* ========================= */
+
+.menu-btn{
+
+    display:none;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:white;
+
+}
+
+/* ========================= */
+/* SCROLLED NAVBAR */
+/* ========================= */
+
+.navbar.scrolled .navbar-container{
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:70px;
+
+    padding:18px 40px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+}
+
+.navbar.scrolled .logo h2{
+
+    color:#1c1c1c;
+
+    font-size:48px;
+
+}
+
+.navbar.scrolled .logo span{
+
+    color:#555;
+
+}
+
+.navbar.scrolled .nav-links a{
+
+    color:#222;
+
+}
+
+.navbar.scrolled .menu-btn{
+
+    color:#222;
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:992px){
+
+.menu-btn{
+
+display:block;
+
+}
+
+.nav-links{
+
+position:fixed;
+
+top:0;
+
+right:-100%;
+
+width:280px;
+
+height:100vh;
+
+background:white;
+
+flex-direction:column;
+
+justify-content:center;
+
+gap:35px;
+
+transition:.4s;
+
+}
+
+.nav-links.active{
+
+right:0;
+
+}
+
+.nav-links a{
+
+color:#222;
+
+}
+
+.visit-btn{
+
+width:200px;
+
+}
+
+.logo h2{
+
+font-size:42px;
+
+}
+
+.logo span{
+
+font-size:10px;
+
+}
+
+}

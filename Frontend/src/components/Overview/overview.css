@@ -1,0 +1,233 @@
+.overview{
+
+    padding:140px 0;
+
+    background:#F8F6F2;
+
+}
+
+.overview-container{
+
+    width:min(88%,1400px);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.overview-content{
+
+    max-width:560px;
+
+}
+
+.overview-tag{
+
+    display:inline-block;
+
+    font-size:13px;
+
+    letter-spacing:4px;
+
+    color:#B08A55;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.overview h2{
+
+    font-family:"Playfair Display", serif;
+
+    font-size:58px;
+
+    line-height:1.08;
+
+    color:#1A1A1A;
+
+    margin-bottom:28px;
+
+}
+
+.overview p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+.overview-btn{
+
+    padding:18px 38px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#B08A55;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.overview-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 40px rgba(176,138,85,.30);
+
+}
+
+.overview-image{
+
+overflow:hidden;
+
+border-radius:35px;
+
+}
+
+.overview-image img{
+
+width:100%;
+
+transition:.8s ease;
+
+display:block;
+
+}
+
+.overview-image:hover img{
+
+transform:scale(1.05);
+
+}
+
+@media(max-width:991px){
+
+.overview-container{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+}
+
+.overview-content{
+
+max-width:100%;
+
+}
+
+.overview h2{
+
+font-size:44px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.overview{
+
+padding:90px 0;
+
+}
+
+.overview h2{
+
+font-size:36px;
+
+}
+
+.overview p{
+
+font-size:16px;
+
+}
+
+.overview-btn{
+
+width:100%;
+
+}
+
+}
+
+.overview-stats{
+
+    margin-top:60px;
+
+    display:flex;
+
+    gap:70px;
+
+}
+
+.overview-stats h3{
+
+    font-size:38px;
+
+    color:#C89B5B;
+
+    font-family:"Playfair Display", serif;
+
+    margin-bottom:8px;
+
+}
+
+.overview-stats span{
+
+    color:#666;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.section-heading{
+
+display:flex;
+
+align-items:center;
+
+gap:16px;
+
+margin-bottom:30px;
+
+}
+
+.gold-line{
+
+width:60px;
+
+height:2px;
+
+background:#C89B5B;
+
+}

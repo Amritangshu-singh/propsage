@@ -1,0 +1,226 @@
+.architecture-section{
+
+padding:120px 8%;
+
+background:linear-gradient(
+180deg,
+#faf8f4,
+#f4efe7
+);
+
+}
+
+.architecture-heading{
+
+text-align:center;
+
+max-width:800px;
+
+margin:0 auto 100px;
+
+}
+
+.architecture-heading span{
+
+letter-spacing:4px;
+
+color:#B08A55;
+
+font-size:13px;
+
+font-weight:600;
+
+}
+
+.architecture-heading h2{
+
+font-family:"Playfair Display",serif;
+
+font-size:60px;
+
+margin:20px 0;
+
+line-height:1.1;
+
+color:#171717;
+
+}
+
+.architecture-heading p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+.architecture-container{
+
+display:flex;
+
+flex-direction:column;
+
+gap:120px;
+
+}
+
+.architecture-card{
+
+display:grid;
+
+grid-template-columns:1.1fr .9fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.architecture-card.reverse{
+
+grid-template-columns:.9fr 1.1fr;
+
+}
+
+.architecture-card.reverse .architecture-image{
+
+order:2;
+
+}
+
+.architecture-card.reverse .architecture-content{
+
+order:1;
+
+}
+
+.architecture-image{
+
+overflow:hidden;
+
+border-radius:28px;
+
+box-shadow:0 30px 80px rgba(0,0,0,.12);
+
+}
+
+.architecture-image img{
+
+width:100%;
+
+display:block;
+
+transition:.8s;
+
+}
+
+.architecture-image:hover img{
+
+transform:scale(1.05);
+
+}
+
+.architecture-content span{
+
+color:#B08A55;
+
+font-size:14px;
+
+letter-spacing:3px;
+
+font-weight:600;
+
+}
+
+.architecture-content h3{
+
+font-family:"Playfair Display",serif;
+
+font-size:52px;
+
+margin:18px 0;
+
+color:#171717;
+
+}
+
+.architecture-content p{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#666;
+
+margin-bottom:35px;
+
+}
+
+.architecture-content ul{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+.architecture-content li{
+
+font-size:17px;
+
+color:#222;
+
+font-weight:500;
+
+}
+
+@media(max-width:992px){
+
+.architecture-card,
+.architecture-card.reverse{
+
+grid-template-columns:1fr;
+
+}
+
+.architecture-card.reverse .architecture-image{
+
+order:1;
+
+}
+
+.architecture-card.reverse .architecture-content{
+
+order:2;
+
+}
+
+.architecture-heading h2{
+
+font-size:42px;
+
+}
+
+.architecture-content h3{
+
+font-size:38px;
+
+}
+
+.architecture-content ul{
+
+grid-template-columns:1fr;
+
+}
+
+}
