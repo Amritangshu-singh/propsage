@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import "./Navbar.css";
+import "./navbar.css";
 import { useLead } from "../../../context/LeadContext";
 
 function Navbar() {

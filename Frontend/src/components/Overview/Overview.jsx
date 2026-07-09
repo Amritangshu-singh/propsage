@@ -1,4 +1,4 @@
-import "./Overview.css";
+import "./overview.css";
 
 import OverviewContent from "./OverviewContent";
 import OverviewImage from "./OverviewImage";
