@@ -15,17 +15,29 @@ html{
 
     scroll-behavior:smooth;
 
+    background:var(--bg);
+
 }
 
 body{
 
     background:var(--bg);
 
+    min-height:100vh;
+
     color:var(--primary);
 
     font-family:'Inter',sans-serif;
 
     overflow-x:hidden;
+
+}
+
+#root{
+
+    min-height:100vh;
+
+    background:var(--bg);
 
 }
 
