@@ -1,6 +1,6 @@
 import "./hero.css";
 
-import heroImage from "../../assets/images/hero-bg.jpg";
+import heroImage from "../../assets/images/hero-bg.webp";
 
 import HeroContent from "./HeroContent";
 import HeroButtons from "./HeroButtons";

@@ -10,7 +10,6 @@ import Amenities from "./components/Amenities/Amenities";
 import FloorPlans from "./components/FloorPlans/FloorPlans";
 import Architecture from "./components/Architecture/Architecture";
 import Gallery from "./components/Gallery/Gallery";
-import ExperienceVideo from "./components/ExperienceVideo/ExperienceVideo";
 import Location from "./components/Location/Location";
 import BookVisit from "./components/BookVisit/BookVisit";
 import LeadPopup from "./components/LeadPopup/LeadPopup";
@@ -46,8 +45,6 @@ function App() {
       <Architecture />
 
       <Gallery />
-
-      <ExperienceVideo />
 
       <Location />
 

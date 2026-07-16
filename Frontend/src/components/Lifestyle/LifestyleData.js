@@ -1,7 +1,7 @@
-import morning from "../../assets/images/morning.jpg";
-import pool from "../../assets/images/amenities/pool.jpg";
-import lounge from "../../assets/images/hall.jpg";
-import clubhouse from "../../assets/images/amenities/clubhouse.jpg";
+import morning from "../../assets/images/morning.webp";
+import pool from "../../assets/images/amenities/pool.webp";
+import lounge from "../../assets/images/hall.webp";
+import clubhouse from "../../assets/images/amenities/clubhouse.webp";
 
 export const lifestyleData = [
 

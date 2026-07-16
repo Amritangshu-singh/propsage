@@ -1,8 +1,8 @@
-import exterior from "../../assets/images/architecture/exterior.jpg";
-import lobby from "../../assets/images/architecture/lobby.jpg";
-import bedroom from "../../assets/images/architecture/bedroom.jpg";
-import living from "../../assets/images/architecture/living-room.jpg";
-import balcony from "../../assets/images/architecture/balcony.jpg";
+import exterior from "../../assets/images/architecture/exterior.webp";
+import lobby from "../../assets/images/architecture/lobby.webp";
+import bedroom from "../../assets/images/architecture/bedroom.webp";
+import living from "../../assets/images/architecture/living-room.webp";
+import balcony from "../../assets/images/architecture/balcony.webp";
 
 const architectureData = [
 

@@ -1,12 +1,12 @@
-import pool from "../../assets/images/amenities/pool.jpg";
-import gym from "../../assets/images/amenities/gym.jpg";
-import clubhouse from "../../assets/images/amenities/clubhouse.jpg";
-import theatre from "../../assets/images/amenities/theatre.jpg";
-import garden from "../../assets/images/amenities/garden.jpg";
-import spa from "../../assets/images/amenities/spa.jpg";
-import skydeck from "../../assets/images/amenities/skydeck.jpg";
-import business from "../../assets/images/amenities/business.jpg";
-import hall from "../../assets/images/amenities/lounge.jpg";
+import pool from "../../assets/images/amenities/pool.webp";
+import gym from "../../assets/images/amenities/gym.webp";
+import clubhouse from "../../assets/images/amenities/clubhouse.webp";
+import theatre from "../../assets/images/amenities/theatre.webp";
+import garden from "../../assets/images/amenities/garden.webp";
+import spa from "../../assets/images/amenities/spa.webp";
+import skydeck from "../../assets/images/amenities/skydeck.webp";
+import business from "../../assets/images/amenities/business.webp";
+import hall from "../../assets/images/amenities/lounge.webp";
 
 export const amenities = [
 
