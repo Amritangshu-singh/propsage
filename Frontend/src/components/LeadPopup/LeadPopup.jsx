@@ -22,6 +22,8 @@ function LeadPopup() {
     email: "",
 
     interest: "",
+
+    message: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -99,14 +101,22 @@ function LeadPopup() {
           />
 
           <select name="interest" value={form.interest} onChange={handleChange}>
-            <option value="">Interested In</option>
+            <option value="">Select Residence</option>
 
-            <option>3 BHK</option>
+            <option value="3 BHK">3 BHK</option>
 
-            <option>4 BHK</option>
+            <option value="4 BHK">4 BHK</option>
 
-            <option>Master Terrace</option>
+            {/* <option value="Master Terrace">Master Terrace</option> */}
           </select>
+
+          <textarea
+            rows="4"
+            name="message"
+            placeholder="Message (Optional)"
+            value={form.message}
+            onChange={handleChange}
+          />
 
           <button type="submit" className="submit-btn" disabled={loading}>
             {loading ? "Submitting..." : "Submit"}

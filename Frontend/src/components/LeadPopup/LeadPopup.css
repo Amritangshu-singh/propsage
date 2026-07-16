@@ -85,7 +85,8 @@
 }
 
 .lead-popup input,
-.lead-popup select{
+.lead-popup select,
+.lead-popup textarea{
 
     width:100%;
 
@@ -96,6 +97,14 @@
     border-radius:12px;
 
     font-size:16px;
+
+}
+
+.lead-popup textarea{
+
+    resize:vertical;
+
+    min-height:120px;
 
 }
 

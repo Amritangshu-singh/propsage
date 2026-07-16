@@ -13,6 +13,7 @@ function CTAButton({
 
   return (
     <button
+      type="button"
       className={className}
       onClick={() => openLeadPopup(source, onSuccess)}
     >

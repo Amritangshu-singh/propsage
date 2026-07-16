@@ -13,6 +13,7 @@ import Gallery from "./components/Gallery/Gallery";
 import ExperienceVideo from "./components/ExperienceVideo/ExperienceVideo";
 import Location from "./components/Location/Location";
 import BookVisit from "./components/BookVisit/BookVisit";
+import LeadPopup from "./components/LeadPopup/LeadPopup";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <LeadPopup />
 
       <Hero />
 

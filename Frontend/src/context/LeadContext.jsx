@@ -1,21 +1,32 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 
 const LeadContext = createContext();
 
 export function LeadProvider({ children }) {
-  function openLeadPopup() {
-    const section = document.getElementById("bookvisit");
+  const [popupOpen, setPopupOpen] = useState(false);
+  const [source, setSource] = useState("Lead Popup");
 
-    section?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+  function openLeadPopup(nextSource = "Lead Popup") {
+    setSource(nextSource);
+    setPopupOpen(true);
+  }
+
+  function closeLeadPopup() {
+    setPopupOpen(false);
+  }
+
+  function submitSuccess() {
+    setPopupOpen(false);
   }
 
   return (
     <LeadContext.Provider
       value={{
         openLeadPopup,
+        closeLeadPopup,
+        submitSuccess,
+        popupOpen,
+        source,
       }}
     >
       {children}
