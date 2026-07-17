@@ -293,7 +293,13 @@ font-size:40px;
 
 .swiper-button-next{
 
-display:none;
+display:none !important;
+
+opacity:0 !important;
+
+visibility:hidden !important;
+
+pointer-events:none !important;
 
 }
 

@@ -17,6 +17,10 @@ html{
 
     background:var(--bg);
 
+    width:100%;
+
+    overflow-x:clip;
+
 }
 
 body{
@@ -24,6 +28,8 @@ body{
     background:var(--bg);
 
     min-height:100vh;
+
+    width:100%;
 
     color:var(--primary);
 
@@ -38,6 +44,10 @@ body{
     min-height:100vh;
 
     background:var(--bg);
+
+    width:100%;
+
+    overflow-x:clip;
 
 }
 
