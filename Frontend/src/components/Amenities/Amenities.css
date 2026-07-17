@@ -289,5 +289,13 @@ font-size:40px;
 
 }
 
+.swiper-button-prev,
+
+.swiper-button-next{
+
+display:none;
+
+}
+
 }
 

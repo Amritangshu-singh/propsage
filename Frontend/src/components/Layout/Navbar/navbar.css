@@ -216,11 +216,17 @@
 
 .navbar-container{
 
-width:min(92%,1200px);
+width:100%;
 
-margin:18px auto;
+margin:0;
+
+padding:14px 16px;
 
 gap:14px;
+
+border-radius:0;
+
+box-shadow:none;
 
 }
 
@@ -306,7 +312,11 @@ margin:0;
 
 padding:14px 18px;
 
-border-radius:32px;
+border-radius:0;
+
+box-shadow:none;
+
+background:rgba(255,255,255,.94);
 
 }
 
