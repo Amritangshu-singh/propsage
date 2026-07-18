@@ -46,7 +46,7 @@ function Navbar() {
 
           <button className="visit-btn" onClick={() => openLeadPopup("Navbar Visit")}>
 
-            Book Visit
+            Download Brochure
 
           </button>
 
