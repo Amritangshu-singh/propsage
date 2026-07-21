@@ -1,10 +1,10 @@
-import masterTerrace from "../../assets/images/floorplan/master-terrace.webp";
+import masterTerrace from "../../../assets/images/floorplan/master-terrace.webp";
 
-import unitA from "../../assets/images/floorplan/unit-A.webp";
-import unitB from "../../assets/images/floorplan/unit-B.webp";
-import unitC from "../../assets/images/floorplan/unit-C.webp";
-import unitD from "../../assets/images/floorplan/unit-D.webp";
-import unitE from "../../assets/images/floorplan/unit-E.webp";
+import unitA from "../../../assets/images/floorplan/unit-A.webp";
+import unitB from "../../../assets/images/floorplan/unit-B.webp";
+import unitC from "../../../assets/images/floorplan/unit-C.webp";
+import unitD from "../../../assets/images/floorplan/unit-D.webp";
+import unitE from "../../../assets/images/floorplan/unit-E.webp";
 
 export const floorPlans = [
 

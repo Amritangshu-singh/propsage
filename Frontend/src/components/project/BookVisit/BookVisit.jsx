@@ -1,6 +1,6 @@
 import "./BookVisit.css";
 import { useEffect, useRef, useState } from "react";
-import { submitLead } from "../../services/leadService";
+import { submitLead } from "../../../services/leadService";
 
 function BookVisit() {
   const [form, setForm] = useState({

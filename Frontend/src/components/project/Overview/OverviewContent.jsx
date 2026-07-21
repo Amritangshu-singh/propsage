@@ -1,4 +1,4 @@
-import { useLead } from "../../context/LeadContext";
+import { useLead } from "../../../context/LeadContext";
 
 function OverviewContent() {
   const { openLeadPopup } = useLead();

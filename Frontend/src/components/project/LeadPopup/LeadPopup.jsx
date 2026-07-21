@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./LeadPopup.css";
-import { useLead } from "../../context/LeadContext";
-import { submitLead } from "../../services/leadService";
+import { useLead } from "../../../context/LeadContext";
+import { submitLead } from "../../../services/leadService";
 
 function LeadPopup() {
   const {

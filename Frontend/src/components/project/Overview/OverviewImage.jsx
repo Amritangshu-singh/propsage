@@ -1,4 +1,4 @@
-import overviewImage from "../../assets/images/overview.webp";
+import overviewImage from "../../../assets/images/overview.webp";
 
 function OverviewImage() {
   return (

@@ -1,11 +1,11 @@
-import exterior1 from "../../assets/images/gallery/exterior-1.webp";
-import exterior2 from "../../assets/images/gallery/exterior-2.webp";
-import lobby from "../../assets/images/gallery/lobby1.webp";
-import living from "../../assets/images/gallery/living-room1.webp";
-import bedroom from "../../assets/images/gallery/bedroom1.webp";
-import balcony from "../../assets/images/gallery/balcony1.webp";
-import pool from "../../assets/images/gallery/pool1.webp";
-import clubhouse from "../../assets/images/gallery/clubhouse1.webp";
+import exterior1 from "../../../assets/images/gallery/exterior-1.webp";
+import exterior2 from "../../../assets/images/gallery/exterior-2.webp";
+import lobby from "../../../assets/images/gallery/lobby1.webp";
+import living from "../../../assets/images/gallery/living-room1.webp";
+import bedroom from "../../../assets/images/gallery/bedroom1.webp";
+import balcony from "../../../assets/images/gallery/balcony1.webp";
+import pool from "../../../assets/images/gallery/pool1.webp";
+import clubhouse from "../../../assets/images/gallery/clubhouse1.webp";
 
 export const galleryData = [
 
