@@ -1,68 +1,33 @@
-import { useEffect, useState } from "react";
-import { HiMenuAlt3, HiX } from "react-icons/hi";
-import "./navbar.css";
-import { useLead } from "../../../context/LeadContext";
+import Logo from "./Logo";
+import NavLinks from "./NavLinks";
+import SearchBar from "./SearchBar";
+import AuthButton from "./AuthButton";
+import MobileMenu from "./MobileMenu";
+
+import "./Navbar.css";
 
 function Navbar() {
-  const { openLeadPopup } = useLead();
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenu, setMobileMenu] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 80);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+    <header className="navbar">
+
       <div className="navbar-container">
 
-        <div className="logo">
+        <Logo />
 
-          <h2>POSCH</h2>
+        <nav className="desktop-nav">
+          <NavLinks />
+        </nav>
 
-          <span>A LIMITED EDITION ADDRESS</span>
-
+        <div className="navbar-actions">
+          <SearchBar />
+          <AuthButton />
         </div>
 
-        <ul className={`nav-links ${mobileMenu ? "active" : ""}`}>
-
-          <li><a href="#overview">Overview</a></li>
-
-          <li><a href="#lifestyle">Lifestyle</a></li>
-
-          <li><a href="#amenities">Amenities</a></li>
-
-          <li><a href="#floorplans">Floor Plans</a></li>
-
-          <li><a href="#gallery">Gallery</a></li>
-
-          <li><a href="#location">Location</a></li>
-
-          <button className="visit-btn" onClick={() => openLeadPopup("Navbar Visit")}>
-
-            Download Brochure
-
-          </button>
-
-        </ul>
-
-        <div
-          className="menu-btn"
-          onClick={() => setMobileMenu(!mobileMenu)}
-        >
-
-          {mobileMenu ? <HiX /> : <HiMenuAlt3 />}
-
-        </div>
+        <MobileMenu />
 
       </div>
-    </nav>
+
+    </header>
   );
 }
 

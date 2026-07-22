@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 
-import Navbar from "../components/layout/Navbar/Navbar";
+import Navbar from "../components/project/ProjectNavbar/ProjectNavbar";
 import Hero from "../components/project/Hero/Hero";
 import Overview from "../components/project/Overview/Overview";
 import Highlights from "../components/project/Highlights/Highlights";
@@ -13,7 +13,7 @@ import Gallery from "../components/project/Gallery/Gallery";
 import Location from "../components/project/Location/Location";
 import BookVisit from "../components/project/BookVisit/BookVisit";
 import LeadPopup from "../components/project/LeadPopup/LeadPopup";
-import Footer from "../components/layout/Footer/Footer";
+import Footer from "../components/project/ProjectFooter/ProjectFooter";
 
 function App() {
   // Initialize AOS
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <ProjectNavbar />
       <LeadPopup />
 
       <Hero />
@@ -50,7 +50,7 @@ function App() {
 
       <BookVisit />
 
-      <Footer />
+      <ProjectFooter />
     </>
   );
 }
